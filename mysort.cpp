@@ -3,8 +3,10 @@ using namespace std;
 
 const int arrSize = 8;
 
-void swap(int &a, int &b);
-void arr_display(int arr[]);
+void swap(int &a, int &b);	// 交换值
+void arr_display(int arr[]);	// 展示数组
+
+void sort_bubble(int arr[]);	// 冒泡排序
 
 int main(){
 	int arr[] = {5, 8, 3, 6, 7, 2, 1, 9};
@@ -16,6 +18,7 @@ int main(){
 	return 0;
 }
 
+// 利用引用传递交换数值
 void swap(int &a, int &b){int temp; temp = a; a = b; b = temp;}
 
 void arr_display(int arr[]){
