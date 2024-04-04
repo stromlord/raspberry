@@ -11,7 +11,9 @@ class demo{
     double total_val;
     void set_tot(){total_val = shares * share_val;}
   public:
-    void acquire(const std::string & co, long n, double pr);
+    demo();
+    demo(const std::string &co, long n=0, double pr=0.0);
+    ~demo();
     void buy(long num, double price);
     void sell(long num, double price);
     void update(double price);
