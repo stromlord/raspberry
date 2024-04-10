@@ -38,6 +38,12 @@ int main(){
         "AGE            INT   NOT NULL,"
         "ADDRESS        CHAR(50),"
         "SALSRY         REAL);";
+  
+  /* sqlite3_exec(sqlite3*, const char *sql, sqlite_callback, void *data, char **errmsg)
+   * 该例程提供了一个执行 SQL 命令的快捷方式，SQL 命令由 sql 参数提供，可以由多个 SQL 命令组成
+   * 在这里，第一个参数 sqlite3 是打开的数据库对象，sqlite_callback 是一个回调，data 作为其第一个参数，errmsg 将被返回用来获取程序生成的任何错误
+   * sqlite3_exec() 程序解析并执行由 sql 参数所给的每个命令，直到字符串结束或者遇到错误为止。
+   * */
 
   rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
   if (rc != SQLITE_OK){

@@ -21,9 +21,30 @@ int main(){
   fixing.Show();
   cout << endl;
 
-  total = coding.Sum(fixing);
-  cout << "coding.Sum(fixing) = ";
+  total = coding + fixing;
+  cout << "coding + fixing = ";
   total.Show();
+  cout << endl;
+
+  Time morefixing(3, 28);
+  cout << "more fixing time = ";
+  morefixing.Show();
+  cout << endl;
+
+  total = morefixing.operator+(total);
+  cout << "morefixing.operator+(total) = ";
+  morefixing.Show();
+  cout << endl;
+
+  Time weeding(4, 35);
+  Time diff = total - weeding;
+  cout << "total - weeding = ";
+  diff.Show();
+  cout << endl;
+
+  Time adjust = diff * 1.69;
+  cout << "diff * 1.69 = ";
+  adjust.Show();
   cout << endl;
 
   return 0;

@@ -2,4 +2,4 @@
 SRCS := $(wildcard *.cpp) 
 
 main : $(SRCS)
-	g++ $(SRCS) -o main
+	g++ $(SRCS) -o demo
