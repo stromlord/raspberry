@@ -25,7 +25,7 @@ namespace VECTOR{
         ~Vector();
         double xval() const {return x;}
         double yval() const {return y;}
-        double megval() const {return mag;}
+        double magval() const {return mag;}
         double angval() const {return ang;}
         void polar_mode();      // 将模式切换为POL
         void rect_mode();       // 将模式切换为RECT
