@@ -14,7 +14,10 @@ public:
     ~Stonewt();
     
     void show_lbs() const;
-    void show_stn() const; 
+    void show_stn() const;
+
+    operator int() const;
+    operator double() const; 
 };
 
 #endif // !STONEWT_H_
