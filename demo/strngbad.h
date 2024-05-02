@@ -1,7 +1,6 @@
 #include <iostream>
 #ifndef STRNGBAD
 #define STRNGBAD
-
 class StringBad
 {
 private:
@@ -12,7 +11,7 @@ public:
     StringBad(const char * s);
     StringBad();
     ~StringBad();
-    friend std::ostream & operator<<(std::ostream & os, const StringBad & st);
+    friend std::ostream & operator<<(std::ostream & os, 
+                        const StringBad & st);
 };
-
 #endif
