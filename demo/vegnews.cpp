@@ -33,11 +33,11 @@ int main() {
 }
 
 void callme1(StringBad& rsb) {
-	cout << "String passed by reference:\n";
+	cout << "String passed by reference:";
 	cout << "    \n" << rsb << "\"\n";
 }
 
 void callme2(StringBad sb) {
-	cout << "String passed by value:\n";
+	cout << "String passed by value:";
 	cout << "    \n" << sb << "\"\n";
 }

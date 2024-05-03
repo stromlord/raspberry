@@ -20,11 +20,30 @@ StringBad::StringBad(){
     cout << num_strings << ": \"" << str << "\" default object created\n";
 }
 
+// 显式复制构造函数（深度复制）
+StringBad::StringBad(const StringBad & st){
+    num_strings++;
+    len = st.len;
+    str = new char [len+1];
+    std::strcpy(str, st.str);
+    cout << num_strings << ":\"" << str << "\" object created\n";
+}
+
 StringBad::~StringBad(){
     cout << "\"" << str << "\" object deleted.";
     --num_strings;
     cout << num_strings << " left\n";
     delete [] str;
+}
+
+StringBad & StringBad::operator=(const StringBad & st){
+    if (this == &st)
+        return *this;
+    delete [] str;
+    len = st.len;
+    str = new char[len+1];
+    std::strcpy(str, st.str);
+    return *this;
 }
 
 std::ostream & operator<<(std::ostream & os, const StringBad & st){
