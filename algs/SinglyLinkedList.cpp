@@ -8,7 +8,7 @@ struct Node{
     // 构造函数，初始化节点的值和指针
     Node(int val) : data(val), next(nullptr) {}
     // 等价于
-    Node(int val){data = val; next = nullptr;}
+    // Node(int val){data = val; next = nullptr;}
 };
 
 // 单链表类
