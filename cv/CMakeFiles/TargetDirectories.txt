@@ -1,3 +1,0 @@
-/home/yinda/cpp/cv/CMakeFiles/ImageShow.dir
-/home/yinda/cpp/cv/CMakeFiles/edit_cache.dir
-/home/yinda/cpp/cv/CMakeFiles/rebuild_cache.dir
